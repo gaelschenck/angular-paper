@@ -1,0 +1,10 @@
+<ul>
+    @for (paper of papers; track paper.id) {
+      <li 
+        (click)="onPaperClic(paper)" 
+        [ngClass]="{'selected': paper === selectedPaper}">
+        {{ paper.name }}
+      </li>
+    }
+  </ul>
+  
